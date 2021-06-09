@@ -75,7 +75,7 @@ def main():
 		fps = 1/(cTime-pTime)
 		pTime = cTime
 
-		proImg = cv2.putText(img, str(int(fps)), (10,70), cv2.FONT_HERSHEY_PLAIN, 3,	(255,0,255), 3)
+		cv2.putText(img, str(int(fps))+" fps", (10,70), cv2.FONT_HERSHEY_SIMPLEX, 1	, (255,0,255), 2)
 
 
 		result.write(img)				
